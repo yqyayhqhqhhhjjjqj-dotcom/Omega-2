@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Omegle</title>
+    <style>
+        body { font-family: Arial; background: #111; color: white; text-align: center; }
+        video { width: 45%; background: black; }
+        button { padding: 10px 20px; margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Mini Omegle</h1>
+
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+
+    <br>
+    <button onclick="find()">🌎 Buscar persona</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4/dist/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
